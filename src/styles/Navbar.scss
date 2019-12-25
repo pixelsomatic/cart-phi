@@ -1,0 +1,30 @@
+.nav-wrapper {
+    text-align: center;
+}
+
+.brand-logo {
+    height: 15vh;
+    pointer-events: none;
+}
+
+.app-header a {
+    text-decoration: none;
+    color: #000000
+}
+
+.app-header p {
+    font-size: xx-large;
+}
+
+.app-header {
+    background-color: white;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: b;
+    color: blue;
+    border-bottom: solid 1px black;
+}
+
