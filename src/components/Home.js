@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { addToCart } from './actions/cartActions'
+import '../styles/Home.scss';
+import add from '../images/add.png';
 
  class Home extends Component{
     
@@ -14,13 +16,15 @@ import { addToCart } from './actions/cartActions'
                 <div className="card" key={item.id}>
                         <div className="card-image">
                             <img src={item.img} alt={item.title}/>
-                            <span className="card-title">{item.title}</span>
-                            <span to="/" className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}><i className="material-icons">add</i></span>
                         </div>
 
                         <div className="card-content">
+                            <span className="card-title">{item.title}</span>
                             <p>{item.desc}</p>
-                            <p><b>Price: {item.price}$</b></p>
+                            <p><b>Preço: R${item.price}</b></p>
+                            <span to="/" className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}>
+                                <img src={add} className="add-icon" title="Adicionar ao carrinho"/>
+                            </span>
                         </div>
                  </div>
 
@@ -29,7 +33,7 @@ import { addToCart } from './actions/cartActions'
 
         return(
             <div className="container">
-                <h3 className="center">Our items</h3>
+                <h3 className="centered">Nossos Livros</h3>
                 <div className="box">
                     {itemList}
                 </div>

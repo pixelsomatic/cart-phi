@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../images/brand-logo.png';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.scss';
+import cart from '../images/iconcart.png';
 
  const Navbar = ()=>{
     return(
@@ -12,10 +13,10 @@ import '../styles/Navbar.scss';
                         <p> Nerd Bookstore </p>
                     </Link>
                     
-                    <ul className="right">
-                        <li><Link to="/cart">My cart</Link></li>
-                        <li><Link to="/cart"><i className="material-icons">shopping_cart</i></Link></li>
-                    </ul>
+                    <div className="right">
+                        <span><Link to="/cart">Meu carrinho</Link></span>
+                        <image><Link to="/cart"><img src={cart} className="cart-icon" /></Link></image>
+                    </div>
                 </div>
             </nav>
    

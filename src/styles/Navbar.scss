@@ -9,7 +9,7 @@
 
 .app-header a {
     text-decoration: none;
-    color: #000000
+    color: #ffffff
 }
 
 .app-header p {
@@ -17,7 +17,7 @@
 }
 
 .app-header {
-    background-color: white;
+    background-color: #1C2626;
     min-height: 25vh;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,9 @@
     justify-content: center;
     font-size: b;
     color: blue;
-    border-bottom: solid 1px black;
 }
 
+.right {
+    margin-left: 46%;
+    margin-top: -5%;
+}
