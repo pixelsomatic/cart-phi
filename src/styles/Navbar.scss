@@ -1,0 +1,33 @@
+.nav-wrapper {
+    text-align: center;
+}
+
+.brand-logo {
+    height: 15vh;
+    pointer-events: none;
+}
+
+.app-header a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.app-header p {
+    font-size: xx-large;
+}
+
+.app-header {
+    background-color: #1C2626;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.right {
+    margin-left: 75%;
+    margin-top: -6%;
+    margin-bottom: 1%;
+}
