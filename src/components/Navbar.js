@@ -16,7 +16,7 @@ import cart from '../images/iconcart.png';
                     </Link>
                     
                     <div className="right">
-                        <image><Link to="/cart"><img src={cart} className="cart-icon" alt="cart" /></Link></image>
+                        <div><Link to="/cart"><img src={cart} className="cart-icon" alt="cart" /></Link></div>
                     </div>
                 </div>
             </nav>
