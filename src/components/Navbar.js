@@ -9,13 +9,14 @@ import cart from '../images/iconcart.png';
             <nav className="nav-wrapper">
                 <div className="app-header">
                     <Link to="/">
-                        <img src={logo} className="brand-logo" alt="logo" />
-                        <p> Nerd Bookstore </p>
+                        <div>
+                            <img src={logo} className="brand-logo" alt="logo" />
+                            <p> Nerd Bookstore </p>
+                        </div>
                     </Link>
                     
                     <div className="right">
-                        <span><Link to="/cart">Meu carrinho</Link></span>
-                        <image><Link to="/cart"><img src={cart} className="cart-icon" /></Link></image>
+                        <image><Link to="/cart"><img src={cart} className="cart-icon" alt="cart" /></Link></image>
                     </div>
                 </div>
             </nav>

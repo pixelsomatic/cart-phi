@@ -9,12 +9,12 @@ import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '
 
 const initState = {
     items: [
-        {id:1,title:'Senhor do Anéis - O Retorno do Rei', desc: "Livro 3 da série O Senhor dos Anéis, de J RR Tolkien", price:35.55,img:Item1},
-        {id:2,title:'Percy Jackson e o Ladrão de Raios', desc: "Livro de fantasia e aventura baseado na mitologia grega", price:24.99,img: Item2},
-        {id:3,title:'Neuromancer', desc: "Romance do gênero cyberpunk",price:16.54,img: Item3},
-        {id:4,title:'I, Robot', desc: "Uma coletânea de contos escrita pelo russo Isaac Asimov", price:23.61,img:Item4},
-        {id:5,title:'Batman: A Piada Mortal', desc: "Edição de Luxo [Alan Moore, Brian Bolland]", price:12.79,img: Item5},
-        {id:6,title:'Watchmen', desc: "Watchmen - Edição Definitiva (Português) Capa dura",price:79.92,img: Item6}
+        {id:1,title:'Senhor do Anéis - O Retorno do Rei', desc: "Livro 3 da série O Senhor dos Anéis, de J RR Tolkien", price:35,img:Item1},
+        {id:2,title:'Percy Jackson e o Ladrão de Raios', desc: "Livro de fantasia e aventura baseado na mitologia grega", price:24,img: Item2},
+        {id:3,title:'Neuromancer', desc: "Romance do gênero cyberpunk",price:16,img: Item3},
+        {id:4,title:'I, Robot', desc: "Uma coletânea de contos escrita pelo russo Isaac Asimov", price:23,img:Item4},
+        {id:5,title:'Batman: A Piada Mortal', desc: "Edição de Luxo [Alan Moore, Brian Bolland]", price:12,img: Item5},
+        {id:6,title:'Watchmen', desc: "Watchmen - Edição Definitiva (Português) Capa dura",price:79,img: Item6}
     ],
     addedItems:[],
     total: 0

@@ -21,9 +21,9 @@ import add from '../images/add.png';
                         <div className="card-content">
                             <span className="card-title">{item.title}</span>
                             <p>{item.desc}</p>
-                            <p><b>Preço: R${item.price}</b></p>
+                            <p><b>Preço: R${item.price},00</b></p>
                             <span to="/" className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}>
-                                <img src={add} className="add-icon" title="Adicionar ao carrinho"/>
+                                <img src={add} className="add-icon" title="Adicionar ao carrinho" alt="cart-icon"/>
                             </span>
                         </div>
                  </div>

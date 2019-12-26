@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import { removeItem,addQuantity,subtractQuantity} from './actions/cartActions'
 import Recipe from './Recipe'
 import '../styles/Home.scss';
+import {arrowUp} from '../images/arrowUp.png';
+// import {arrowDown} from '../images/arrowDown.png';
+import {cart} from '../images/iconcart.png';
 class Cart extends Component{
 
     //to remove the item completely
@@ -25,7 +28,7 @@ class Cart extends Component{
                 this.props.items.map(item=>{
                     return(
                        
-                        <li className="card" key={item.id}>
+                        <div className="card" key={item.id}>
                                     <div className="card-image"> 
                                         <img src={item.img} alt={item.img} className=""/>
                                     </div>
@@ -33,25 +36,30 @@ class Cart extends Component{
                                     <div className="card-content">
                                         <span className="title">{item.title}</span>
                                         <p>{item.desc}</p>
-                                        <p><b>Preço: {item.price}$</b></p> 
+                                        <p><b>Preço: R${item.price},00</b></p> 
                                         <p>
                                             <b>Quantidade: {item.quantity}</b> 
                                         </p>
                                         <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                            <Link to="/cart"><div className="arrowup-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>
+                                                <img src={arrowUp} alt="arrowUp"/></div>
+                                            </Link>
+                                            <Link to="/cart"><div className="arrowdown-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>
+                                                </div>
+                                            </Link>
                                         </div>
                                         <button className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}>Remover item</button>
+                                            <img src={cart} alt="arrowDown"/>
                                     </div>
                                     
-                                </li>
+                                </div>
                          
                     )
                 })
             ):
 
              (
-                <p>Nenhum item.</p>
+                <p className="no-item">Nenhum item.</p>
              )
        return(
             <div className="container">

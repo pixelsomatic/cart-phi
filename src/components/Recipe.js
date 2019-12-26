@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-//import { addShipping } from './actions/cartActions'
+import '../styles/Recipe.scss';
 class Recipe extends Component{
     
     componentWillUnmount() {
@@ -20,18 +20,18 @@ class Recipe extends Component{
     render(){
   
         return(
-            <div className="container">
+            <div className="cart-container">
                 <div className="collection">
-                    <li className="collection-item">
+                    <div className="collection-item">
                             <label>
                                 <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
-                                <span>Shipping(+6$)</span>
+                                <span>Taxa de entrega(+ R$6,00)</span>
                             </label>
-                        </li>
-                        <li className="collection-item"><b>Total: {this.props.total} $</b></li>
+                        </div>
+                        <div className="collection-item"><b>Total: R${this.props.total},00</b></div>
                     </div>
                     <div className="checkout">
-                        <button className="waves-effect waves-light btn">Checkout</button>
+                        <button className="checkout-btn">Comprar</button>
                     </div>
                  </div>
         )
